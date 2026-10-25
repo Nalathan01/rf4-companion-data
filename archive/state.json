@@ -1,13 +1,11 @@
 {
- "lastRun": "2026-10-25T20:54:16Z",
+ "lastRun": "2026-10-25T21:38:47Z",
  "weeks": [
   "2026-10-25"
  ],
  "pages": 55,
  "ok": 55,
- "records": 24071,
- "new": 19322,
- "consolidated": [
-  "2026-10-18"
- ]
+ "records": 25626,
+ "new": 5405,
+ "consolidated": []
 }
