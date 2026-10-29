@@ -1,15 +1,15 @@
 {
- "lastRun": "2026-10-29T00:56:05Z",
+ "lastRun": "2026-10-29T09:57:39Z",
  "weeks": [
   "2026-10-25"
  ],
  "pages": 55,
  "ok": 55,
- "records": 43266,
- "new": 5927,
+ "records": 43671,
+ "new": 3318,
  "consolidated": [],
- "teleLast": "2026-10-29T00:56:05Z",
+ "teleLast": "2026-10-29T09:57:39Z",
  "tele": {
-  "records": 1931
+  "records": 1793
  }
 }
