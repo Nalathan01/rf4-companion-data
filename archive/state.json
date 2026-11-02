@@ -1,18 +1,21 @@
 {
- "lastRun": "2026-11-02T11:04:12Z",
+ "lastRun": "2026-11-02T18:57:39Z",
  "weeks": [
-  "2026-10-25",
   "2026-11-01"
  ],
  "pages": 55,
  "ok": 55,
- "records": 34328,
- "new": 4764,
+ "records": 37968,
+ "new": 17475,
  "consolidated": [],
- "teleLast": "2026-11-02T11:04:12Z",
+ "teleLast": "2026-11-02T18:57:39Z",
  "tele": {
-  "records": 9247
+  "records": 11406
  },
- "absLast": "2026-11-01T21:19:34Z",
- "absolute": {}
+ "absLast": "2026-11-02T18:57:39Z",
+ "absolute": {
+  "pages": 55,
+  "failed": [],
+  "new": 168
+ }
 }
