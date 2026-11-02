@@ -1,17 +1,19 @@
 {
- "lastRun": "2026-11-01T22:42:42Z",
+ "lastRun": "2026-11-02T00:44:32Z",
  "weeks": [
   "2026-10-25",
   "2026-11-01"
  ],
  "pages": 55,
  "ok": 55,
- "records": 27047,
- "new": 7886,
- "consolidated": [],
- "teleLast": "2026-11-01T22:42:42Z",
+ "records": 28648,
+ "new": 6487,
+ "consolidated": [
+  "2026-10-25"
+ ],
+ "teleLast": "2026-11-02T00:44:32Z",
  "tele": {
-  "records": 5859
+  "records": 6538
  },
  "absLast": "2026-11-01T21:19:34Z",
  "absolute": {}
