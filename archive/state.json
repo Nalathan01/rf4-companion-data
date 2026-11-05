@@ -1,17 +1,21 @@
 {
- "lastRun": "2026-11-05T06:44:59Z",
+ "lastRun": "2026-11-05T17:23:54Z",
  "weeks": [
   "2026-11-01"
  ],
  "pages": 66,
  "ok": 66,
- "records": 51149,
- "new": 1857,
+ "records": 51943,
+ "new": 5533,
  "consolidated": [],
- "absLast": "2026-11-04T17:14:31Z",
- "absolute": {},
+ "absLast": "2026-11-05T17:23:54Z",
+ "absolute": {
+  "pages": 66,
+  "failed": [],
+  "new": 224
+ },
  "icons": {
-  "seen": 1013,
-  "new": 8
+  "seen": 1023,
+  "new": 30
  }
 }
