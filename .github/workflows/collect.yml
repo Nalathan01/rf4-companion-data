@@ -35,8 +35,14 @@ jobs:
       - run: pip install -r src/requirements.txt
       - run: python -m playwright install --with-deps chromium
       - name: Collect
+        id: run
         working-directory: src
-        run: python collect.py --regions all
+        run: |
+          set +e
+          python collect.py --regions all > /tmp/collect.log 2>&1
+          code=$?
+          tail -n 60 /tmp/collect.log > archive/last_run.log
+          echo "code=$code" >> "$GITHUB_OUTPUT"
       - name: Commit archive
         working-directory: src
         run: |
@@ -48,11 +54,12 @@ jobs:
           for i in 1 2 3; do if git pull --rebase -X theirs && git push; then exit 0; fi; git rebase --abort 2>/dev/null; sleep 5; done
           exit 1
       - name: Publish
+        if: steps.run.outputs.code == '0'
         working-directory: src
         env:
           DATA_SALT: ${{ secrets.DATA_SALT }}
         run: |
-          python publish.py ../public
+          python publish.py ../public > /dev/null
           cd ../public
           git config user.name "rf4-collector"
           git config user.email "rf4-collector@users.noreply.github.com"
@@ -61,3 +68,5 @@ jobs:
           git commit -m "Daten $(date -u +%Y-%m-%dT%H:%MZ)"
           for i in 1 2 3; do if git pull --rebase -X theirs && git push; then exit 0; fi; git rebase --abort 2>/dev/null; sleep 5; done
           exit 1
+      - name: Result
+        run: exit ${{ steps.run.outputs.code }}
